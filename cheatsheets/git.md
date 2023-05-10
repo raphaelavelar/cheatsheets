@@ -6,10 +6,11 @@
     - [Status](#status)
     - [Add](#add)
     - [Commit](#commit)
+    - [Restore](#restore)
     - [Remove](#remove)
     - [Move](#move)
-    - [Restore](#restore)
     - [Clean](#clean)
+    - [Diif](#diff)
 ---
 
 ## Repository
@@ -40,6 +41,12 @@ git commit                      # Opens an editor to type a short message and a 
 git commit -am "Message"        # Commits directly, without staging the files
 ```
 
+### Restore
+```bash
+git restore .                   # Restores all modifications in the current directory
+git restore --staged file.txt   # Restores a file in index
+```
+
 ### Remove
 ```bash
 git rm file.txt                 # Removes a file from index and working directory
@@ -53,13 +60,13 @@ git rm --cached file.txt        # Removes a file from the index only
 git mv file.txt newFile.txt     # Moves and rename a file
 ```
 
-### Restore
-```bash
-git restore .                   # Restores all modifications in the current directory
-git restore --staged file.txt   # Restores a file in index
-```
-
 ### Clean
 ```bash
 git clean -fd                   # Cleans all unstracked files
+```
+
+### Diff
+```bash
+git diff                        # Displays all changes
+git diff --staged               # Dsiplays changes on index
 ```
