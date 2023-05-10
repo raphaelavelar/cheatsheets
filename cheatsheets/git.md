@@ -15,6 +15,7 @@
     - [Log](#log)
     - [Show](#show)
     - [Ls-tree](#ls-tree)
+---
 
 ## Repository
 ### Init
@@ -78,9 +79,20 @@ git diff --staged               # Dsiplays changes on index
 ## History
 ### Log
 ```bash
-git log                         # List of commits
+git log                         # Lists commits by newest
 git log --oneline               # Summarized list of commits
-git log --oneline --reverse     # Summarized list of commits ordered by first commit
+git log --oneline --reverse     # Summarized list of commits ordered by oldest
+git log --stat                  # Lists changed files in each commit
+git log --patch                 # Lists changes in each commit
+git log -<number>               # Lists n commits
+git log --author="Name"         # Filter by author
+git log --before="Date"         # Filter by creation date before a specified date
+git log --after="Date"          # Filter by creation date after a specified date
+git log --grep="text"           # Filter by a text in commit message
+git log -S"text"                # Filter by a word in files
+git log <hash>...<hash>         # Lists commits between the first and second hash specified, exclusive
+git log <path to file>          # Lists commits that modified the specified file 
+git log --pretty=format:"args"  # Formats the commit list following a pattern. See more on https://git-scm.com/docs/git-log
 ```
 
 ### Show
