@@ -14,7 +14,7 @@
 - [History](#history)
     - [Log](#log)
     - [Show](#show)
-    - [Ls-tree](#ls-tree
+    - [Ls-tree](#ls-tree)
 ---
 
 ## Repository
