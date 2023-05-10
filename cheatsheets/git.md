@@ -1,11 +1,24 @@
 # Git
+## Table of contents
+- [Repository](#repository)
+    - [Init](#init)
+- [Snapshot](#snapshot)
+    - [Status](#status)
+    - [Add](#add)
+    - [Commit](#commit)
+    - [Remove](#remove)
+    - [Move](#move)
+    - [Restore](#restore)
+    - [Clean](#clean)
+---
+
 ## Repository
 ### Init
 ```bash
 git init                        # Creates an empty repository
 ```
 
-## Snapshots
+## Snapshot
 ### Status
 ```bash
 git status                      # Displays the status of each modified file
