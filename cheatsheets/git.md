@@ -92,6 +92,7 @@ git log --grep="text"           # Filter by a text in commit message
 git log -S"text"                # Filter by a word in files
 git log <hash>...<hash>         # Lists commits between the first and second hash specified, exclusive
 git log <path to file>          # Lists commits that modified the specified file 
+git log --pretty=format:"args"  # Formats the commit list following a pattern. See more on https://git-scm.com/docs/git-log
 ```
 
 ### Show
