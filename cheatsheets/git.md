@@ -10,7 +10,9 @@
     - [Remove](#remove)
     - [Move](#move)
     - [Clean](#clean)
-    - [Diif](#diff)
+    - [Dif](#diff)
+- [History](#history)
+    - [Log](#log)
 ---
 
 ## Repository
@@ -69,4 +71,12 @@ git clean -fd                   # Cleans all unstracked files
 ```bash
 git diff                        # Displays all changes
 git diff --staged               # Dsiplays changes on index
+```
+
+## History
+### Log
+```bash
+git log                         # List of commits
+git log --oneline               # Summarized list of commits
+git log --oneline --reverse     # Summarized list of commits ordered by first commit
 ```
