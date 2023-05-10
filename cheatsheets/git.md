@@ -14,6 +14,7 @@
 - [History](#history)
     - [Log](#log)
     - [Show](#show)
+    - [Ls-tree](#ls-tree)
 ---
 
 ## Repository
@@ -86,6 +87,12 @@ git log --oneline --reverse     # Summarized list of commits ordered by first co
 ```bash
 git show <commit's identifier>  # Displays the changes in a commit
 git show HEAD                   # Displays the contents from the latest commit
-git show HEAD~<number of steps> # Displays the nth commit from the HEAD
+git show HEAD~<number>          # Displays the nth commit from the HEAD
 git show HEAD~1:<path to file>  # Displays a specific version of file stored in the commit
+```
+
+### Ls-tree
+```bash
+git ls-tree                     # Displays all the files of a commit in a tree
+git ls-tree HEAD~<number>       # Displays the files of a specific commit
 ```
