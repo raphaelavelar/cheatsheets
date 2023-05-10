@@ -24,4 +24,13 @@ git add .                   # Add all changes in the current directory
 ```bash
 git commit -m "Descrition"  # Creates a commit with a short message
 git commit                  # Opens an editor to type a short message and a description
+git commit -am "Message"    # Commits directly, without staging the files
+```
+
+### Remove
+```bash
+git rm file.txt             # Removes a file from index and working directory
+git rm file.txt file.md     # Removes multiple files
+git rm *.txt                # Removes files with a pattern
+git rm --cached file.txt    # Removes a file from the index only
 ```
