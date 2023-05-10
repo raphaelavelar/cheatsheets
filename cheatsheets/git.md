@@ -13,6 +13,7 @@
     - [Diff](#diff)
 - [History](#history)
     - [Log](#log)
+    - [Show](#show)
 ---
 
 ## Repository
@@ -79,4 +80,12 @@ git diff --staged               # Dsiplays changes on index
 git log                         # List of commits
 git log --oneline               # Summarized list of commits
 git log --oneline --reverse     # Summarized list of commits ordered by first commit
+```
+
+### Show
+```bash
+git show <commit's identifier>  # Displays the changes in a commit
+git show HEAD                   # Displays the contents from the latest commit
+git show HEAD~<number of steps> # Displays the nth commit from the HEAD
+git show HEAD~1:<path to file>  # Displays a specific version of file stored in the commit
 ```
