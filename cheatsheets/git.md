@@ -10,7 +10,7 @@
     - [Remove](#remove)
     - [Move](#move)
     - [Clean](#clean)
-    - [Dif](#diff)
+    - [Diff](#diff)
 - [History](#history)
     - [Log](#log)
     - [Show](#show)
