@@ -15,7 +15,6 @@
     - [Log](#log)
     - [Show](#show)
     - [Ls-tree](#ls-tree)
----
 
 ## Repository
 ### Init
@@ -49,6 +48,7 @@ git commit -am "Message"        # Commits directly, without staging the files
 ```bash
 git restore .                   # Restores all modifications in the current directory
 git restore --staged file.txt   # Restores a file in index
+git restore --source=HEAD~<number> <path to file> # Restores a file from a specific commit
 ```
 
 ### Remove
