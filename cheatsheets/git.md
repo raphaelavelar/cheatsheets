@@ -34,3 +34,8 @@ git rm file.txt file.md     # Removes multiple files
 git rm *.txt                # Removes files with a pattern
 git rm --cached file.txt    # Removes a file from the index only
 ```
+
+### Move
+```bash
+git mv file.txt newFile.txt # Moves and rename a file
+```
