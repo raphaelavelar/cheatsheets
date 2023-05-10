@@ -19,3 +19,9 @@ git add file.txt file.md    # Adds multiple files
 git add *.txt               # Add all files with the pattern
 git add .                   # Add all changes in the current directory
 ```
+
+### Commit
+```bash
+git commit -m "Descrition"  # Creates a commit with a short message
+git commit                  # Opens an editor to type a short message and a description
+```
