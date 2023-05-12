@@ -19,6 +19,7 @@
     - [Show](#show)
     - [Ls-tree](#ls-tree)
     - [Bisect])(#bisect)
+    - [Shortlog](#shortlog)
 ---
 
 ## Repository
@@ -144,4 +145,11 @@ git bisect start                # Starts bisect
 git bisect bad                  # Sets the HEAD as a bad commit
 git bisect good                 # Sets the HEAD as a good commit
 git bisect reset                # Resets the HEAD to master
+```
+
+### Shortlog
+```bash
+# Shortlog accepts the same filters as the [log](#log) command, e.g. author, before and after
+git shortlog                    # Lists contributors and their commits
+git shortlog -s                 # Lists contributors and their number of commits
 ```
