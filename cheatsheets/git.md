@@ -2,6 +2,9 @@
 ## Table of contents
 - [Repository](#repository)
     - [Init](#init)
+- [Configuration](#configuration)
+    - [User](#user)
+    - [Alias](#alias)
 - [Snapshot](#snapshot)
     - [Status](#status)
     - [Add](#add)
@@ -21,6 +24,22 @@
 ### Init
 ```bash
 git init                        # Creates an empty repository
+```
+
+## Configuration
+### User
+```bash
+# Git offers three configuration levels:
+# System: applies to all users
+# Global: applies to every repository of the current user
+# Local: applies to the current repository
+git config --global user.name "name"    # Configures the user's name globally
+git config --global user.email "email"  # Configures the user's email globally
+```
+
+### Alias
+```bash
+git config --global alias.<alias> "command" # Configures an alias for a git command
 ```
 
 ## Snapshot
