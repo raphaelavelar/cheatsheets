@@ -105,8 +105,8 @@ git diff HEAD~<n> HEAD~<m> <path to file>   # Displays the changes for a file be
 git log                         # Lists commits by newest
 git log --oneline               # Summarized list of commits
 git log --oneline --reverse     # Summarized list of commits ordered by oldest
-git log --stat                  # Lists changed files in each commit
-git log --patch                 # Lists changes in each commit
+git log --stat                  # Lists changes statistics of each commit
+git log --patch                 # Lists changed files in each commit
 git log --all                   # Lists all commits when in a detached HEAD state
 git log -<number>               # Lists n commits
 git log --author="Name"         # Filter by author
