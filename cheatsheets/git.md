@@ -18,6 +18,7 @@
     - [Log](#log)
     - [Show](#show)
     - [Ls-tree](#ls-tree)
+    - [Bisect])(#bisect)
 ---
 
 ## Repository
@@ -131,4 +132,16 @@ git show HEAD~1 --name-status   # Displays the name and status of each modified 
 ```bash
 git ls-tree                     # Displays all the files of a commit in a tree
 git ls-tree HEAD~<number>       # Displays the files of a specific commit
+```
+
+### Bisect
+```bash
+# Bisect divides the history in half based on good and bad commits in order to identify a
+# problem added to the sourde code.
+# After starting it, it's necessary to specify the good and bad commits using their unique identifiers
+# Once this configuration is done, the current state should be tested to mark it accordingly.
+git bisect start                # Starts bisect
+git bisect bad                  # Sets the HEAD as a bad commit
+git bisect good                 # Sets the HEAD as a good commit
+git bisect reset                # Resets the HEAD to master
 ```
