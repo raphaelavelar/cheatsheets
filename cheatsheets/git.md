@@ -93,6 +93,8 @@ git clean -fd                   # Cleans all unstracked files
 ```bash
 git diff                        # Displays all changes
 git diff --staged               # Dsiplays changes on index
+git diff HEAD~<n> HEAD~<m>      # Displays the changes between the specified commits
+git diff HEAD~<n> HEAD~<m> <path to file>   # Displays the changes for a file between the specified commits
 ```
 
 ## History
@@ -103,6 +105,7 @@ git log --oneline               # Summarized list of commits
 git log --oneline --reverse     # Summarized list of commits ordered by oldest
 git log --stat                  # Lists changed files in each commit
 git log --patch                 # Lists changes in each commit
+git log --all                   # Lists all commits when in a detached HEAD state
 git log -<number>               # Lists n commits
 git log --author="Name"         # Filter by author
 git log --before="Date"         # Filter by creation date before a specified date
@@ -120,6 +123,8 @@ git show <commit's identifier>  # Displays the changes in a commit
 git show HEAD                   # Displays the contents from the latest commit
 git show HEAD~<number>          # Displays the nth commit from the HEAD
 git show HEAD~1:<path to file>  # Displays a specific version of file stored in the commit
+git show HEAD~1 --name-only     # Displays only the name of the modified files
+git show HEAD~1 --name-status   # Displays the name and status of each modified file
 ```
 
 ### Ls-tree
