@@ -21,6 +21,7 @@
     - [Bisect])(#bisect)
     - [Shortlog](#shortlog)
     - [Blame](#blame)
+    - [Tag](#tag)
 ---
 
 ## Repository
@@ -160,4 +161,15 @@ git shortlog -s                 # Lists contributors and their number of commits
 git blame <path to file>        # Lists authors and commits that modified each line of file
 git blame -e <path to file>     # Lists authors' emails instead of names
 git blame -L <n>, <m> <file>    # Lists authors and commits that modified the lines n to m of a file
+```
+
+### Tag
+```bash
+git tag                         # Lists existing tags
+git tag -n                      # Lists existing tags and their messages
+git tag <name>                  # Creates a tag in HEAD
+git tag <name> <commit>         # Creates a tag for a specific commit
+git tag -a <name> -m "message"  # Creates an annotated tag with a custom message
+git tag -d <tag name>           # Deletes a tag
+git show <tag name>             # Provides detailed information for a tag
 ```
