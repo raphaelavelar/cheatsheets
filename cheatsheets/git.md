@@ -20,6 +20,7 @@
     - [Ls-tree](#ls-tree)
     - [Bisect])(#bisect)
     - [Shortlog](#shortlog)
+    - [Blame](#blame)
 ---
 
 ## Repository
@@ -149,7 +150,14 @@ git bisect reset                # Resets the HEAD to master
 
 ### Shortlog
 ```bash
-# Shortlog accepts the same filters as the [log](#log) command, e.g. author, before and after
+# Shortlog accepts the same filters as the log command, e.g. author, before and after
 git shortlog                    # Lists contributors and their commits
 git shortlog -s                 # Lists contributors and their number of commits
+```
+
+### Blame
+```bash
+git blame <path to file>        # Lists authors and commits that modified each line of file
+git blame -e <path to file>     # Lists authors' emails instead of names
+git blame -L <n>, <m> <file>    # Lists authors and commits that modified the lines n to m of a file
 ```
